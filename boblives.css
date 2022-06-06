@@ -708,12 +708,12 @@ font-family: 'Arvo', serif;}
 .hassle{
 color:red;}
 .appointment{
-  font-family: bold 11px sans-serif;
+  font-family: bold 6px sans-serif;
   text-decoration:none;
   border:1px solid red;
   border-style:light;
   border-radius:15px;
-  padding:15px 30px 15px 30px;
+  padding:5px 10px 5px 10px;
   font-size: 20px;
   outline: red;
   background-color: #f47354;
