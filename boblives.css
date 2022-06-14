@@ -85,7 +85,8 @@ color: #f5b042;
   text-decoration: none;  
   }
   .definition{font-family: 'Arvo', serif;
- color:red; }
+ color:red;
+ margin:3px; }
  .bph{font-size:1.5em;
  padding:3px;
  margin:10px
@@ -139,9 +140,10 @@ height:auto;}
       .box {
          background:none;
          color:black;
-         width: 30%;
+         width: 100%;
          height: auto;
-         margin: 5px;
+         margin: 3px;
+         padding:3px;
          border: 3px solid #f5b042;
         font-weight: 900;
          font-size:20px;
@@ -708,7 +710,7 @@ font-family: 'Arvo', serif;}
 .hassle{
 color:red;}
 .appointment{
-  font-family: bold 6px sans-serif;
+  font-family: bold 11px sans-serif;
   text-decoration:none;
   border:1px solid red;
   border-style:light;
@@ -717,7 +719,7 @@ color:red;}
   font-size: 20px;
   outline: red;
   background-color: #f47354;
-  margin:05px;
+  margin:20px;
   color:white;
   text-align:center;
  }
