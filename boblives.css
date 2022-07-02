@@ -890,3 +890,31 @@ margin:5px;
 .team{
 margin:5px;
 line-height:30px;}
+.sof{background-color:#665ae4;
+color:white;}
+.getNow{font-family: sans-serif;
+         border: none;
+         padding: 15px 30px;
+         font-size: 20px;
+         outline: none;
+         border-radius: 5px;
+         background-color: purple;
+         color: #f8f9f9;
+         text-align:center;
+         margin:0 auto;
+         text-align:center;}
+         
+ .GFG{font-family: sans-serif;
+ border: none;
+ padding: 15px 30px;
+ font-size: 20px;
+ outline: none;
+ border-radius: 5px;
+ text-align: center; 
+ margin:10px 2em;
+ display:inline-block;
+ background-color:#665ae4;
+ color:white;
+          } 
+         
+         
