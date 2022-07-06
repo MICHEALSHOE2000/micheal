@@ -829,6 +829,10 @@ font-weight:bold;
 margin:2px;
 line-height:30px;
 }
+.hare{
+margin:.5em;
+background-color:#73f094;
+font-size:1.2em;}
 
 hr.style-seven {
     overflow: visible; /* For IE */
