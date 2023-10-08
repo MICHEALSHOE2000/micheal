@@ -10,6 +10,23 @@
 
   gtag('config', 'AW-11364445976');
 </script>
+          <!-- Event snippet for buy product conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11364445976/itE4CKqU3-kYEJje_qoq',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
      <meta charset="UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- CSS only -->
@@ -279,11 +296,9 @@
      
      <input type="radio" name="amount" value="4bottle" id="4bottle" />
      <label for="4bottle"><span></span><b> Four bottles of the PROSTATE WEL SOLUTION CAPSULES &#8358 60,000</b> </label>
-    <div class="input-cnt">
-      <center>
-        <button type="submit" id="submit-button" class="call-to-action-button">GET MY PACK NOW</button>
-      </center>
-    </div>
+     <input type="hidden" name="conversion" value="button_click">
+       <center> <button type="submit" id="submit-button" class="call-to-action-button" onclick="gtag_report_conversion();">GET MY PACK NOW</button> </center>
+     </div>
   </form>
 </div>
 
