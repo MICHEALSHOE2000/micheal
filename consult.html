@@ -1,18 +1,35 @@
 <!DOCTYPE html>
      <html lang='en'>
      <head>
-     <!-- Google Tag Manager -->
-     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-     })(window,document,'script','dataLayer','GTM-TVCT9D2');</script>
-     <!-- End Google Tag Manager -->
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11364445976"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11364445976');
+</script>
+          <!-- Event snippet for buy product conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11364445976/itE4CKqU3-kYEJje_qoq',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
      <meta charset="UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- CSS only -->
-     
-     
      <title>
      LASTING SOLUTION TO PROSTRATE ENLARGEMENT</title>
      <meta name="description" content=" learn how to shrink prostate enlargement, cure enlarged prostate, end painful urination and other Uti">
@@ -218,9 +235,8 @@ ul li:before {
      </div>
    <h2 style="text-align: center"> Book an Appointment </h2>
    <div class="form-container">
-   <form id="contactform" action="https://formspree.io/f/xeqvnlve"
-   name="myForm" onsubmit="return(validate())" method="post">
-   
+  <form name="contact" method="POST" netlify>
+ 
    <div class="input-cnt">
    <i class="material-icons">person</i>
    <input type="text" placeholder="Name" name="Name" />
@@ -281,10 +297,9 @@ ul li:before {
    </div>
    </div>
    
-   <div class="input-cnt">
-   <input type="submit" />
-   </div>
-   
+  <input type="hidden" name="conversion" value="button_click">
+       <center> <button type="submit" id="submit-button" class="call-to-action-button" onclick="gtag_report_conversion();">GET FREE CONSULTATION</button> </center>
+     </div>
    </form></div>
 
          <footer class="footer-distributed">
