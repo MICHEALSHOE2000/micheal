@@ -77,14 +77,23 @@ html, body {width: auto!important;
     height: 90px;
     bottom: 15px;
     background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-    font-size: 30px;
+    font-size: 0; /* Remove font-size */
     box-shadow: 3px 4px 3px #999;
     right: 10px;
     z-index: 100;
+
+    display: flex; /* Use flexbox to center the icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
+
+.whats-app i {
+    color: #FFF;
+    font-size: 12vw; /* Make the icon responsive with a relative size */
+}
+
 
   .gfont{font-family: 'Arvo', serif;}
    .therapy{font-family: 'Arvo', serif;
